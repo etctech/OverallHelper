@@ -1,0 +1,31 @@
+{
+    "name": "etctech/overall-helper",
+    "description": "This package is helper Package for speed up development",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tommy ETC",
+            "email": "tommy@etctech.com.my"
+        }
+    ],
+    "version": "v0.0.1",
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.2",
+        "laravel/framework": "^6.0",
+        "doctrine/dbal": "^2.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "etctech\\OverallHelper\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "etctech\\OverallHelper\\Providers\\OverallHelperServiceProvider"
+            ]
+        }
+    }
+}
